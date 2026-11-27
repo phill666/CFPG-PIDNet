@@ -14,8 +14,6 @@ Official manuscript implementation. CFPG occupies the DFM output, with a learnab
 - Best evaluated three-dataset MeasurementOpt macro **BDE 25.10 px** (**47.4%** below PIDNet) and **Spearman rho 0.832**.
 - RTX 4090, true FP32, 512x512, batch 1: **164.06 FPS eager**, **187.45 FPS CUDA Graph**.
 
-![Boundary accuracy versus speed](assets/pareto.png)
-
 ## Core results
 
 Macro means first average seeds 42/2026/3407 within each dataset, then equally average KSDD2, MTD and NEU Seg under MeasurementOpt.
