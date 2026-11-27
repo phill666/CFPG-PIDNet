@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange) ![License](https://img.shields.io/badge/License-MIT-green)
 
 **Tianyu Liu\*, Haiyu Li\*, Siqi Ran, Xiangyu Wang**
-\* Equal contribution. Contact: **liuty@mail.xzcit.cn**.
+\* Co-corresponding authors: Tianyu Liu and Haiyu Li. Contact: **liuty@mail.xzcit.cn**.
 
 Official manuscript implementation. CFPG occupies the DFM output, with a learnable identity-preserving residual scale initialized to 0.1. Native P/I/D branches are retained. Inference returns 1/8-resolution logits; evaluation interpolates logits to each original image size before softmax and measurement.
 
