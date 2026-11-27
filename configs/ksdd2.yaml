@@ -1,0 +1,31 @@
+dataset:
+  name: KolektorSDD2
+  root: ./data/KSDD2
+  image_dir: images\training
+  mask_dir: annotations\training
+  num_classes: 2
+  split_dir: ./splits
+  train_split: ksdd2_train.txt
+  val_split: ksdd2_val.txt
+  test_split: ksdd2_test.txt
+  rebuild_split: false
+  seed: 42
+  train_ratio: 0.85
+  val_ratio: 0.15
+  test_ratio: 0.15
+  train_dir: train
+  test_dir: test
+train:
+  input_size: 512
+  epochs: 160
+  batch_size: 16
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
+  power: 0.9
+  amp: true
+  seed: 42
+variant: cfpg
+loss:
+  ce_weight: 1.0
+  dice_weight: 1.0

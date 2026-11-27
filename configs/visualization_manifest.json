@@ -1,0 +1,62 @@
+{
+  "ksdd2": {
+    "config": "configs/ksdd2.yaml",
+    "models": {
+      "PIDNet": {
+        "variant": "baseline",
+        "weights": "checkpoints/ksdd2/baseline_seed42.pth",
+        "threshold": 0.3
+      },
+      "CFPG-PIDNet": {
+        "variant": "cfpg",
+        "weights": "checkpoints/ksdd2/cfpg_seed42.pth",
+        "threshold": 0.6
+      },
+      "U-Net": {
+        "variant": "unet",
+        "weights": "checkpoints/ksdd2/unet_seed42.pth",
+        "threshold": 0.3
+      }
+    }
+  },
+  "mtd": {
+    "config": "configs/mtd.yaml",
+    "models": {
+      "PIDNet": {
+        "variant": "baseline",
+        "weights": "checkpoints/mtd/baseline_seed42.pth",
+        "threshold": 0.35
+      },
+      "CFPG-PIDNet": {
+        "variant": "cfpg",
+        "weights": "checkpoints/mtd/cfpg_seed42.pth",
+        "threshold": 0.55
+      },
+      "STDC-Seg": {
+        "variant": "stdcseg",
+        "weights": "checkpoints/mtd/stdcseg_seed42.pth",
+        "threshold": 0.75
+      }
+    }
+  },
+  "neu_seg": {
+    "config": "configs/neu_seg.yaml",
+    "models": {
+      "PIDNet": {
+        "variant": "baseline",
+        "weights": "checkpoints/neu_seg/baseline_seed42.pth",
+        "threshold": 0.5
+      },
+      "CFPG-PIDNet": {
+        "variant": "cfpg",
+        "weights": "checkpoints/neu_seg/cfpg_seed42.pth",
+        "threshold": 0.75
+      },
+      "PP-LiteSeg-STDC1": {
+        "variant": "ppliteseg_stdc1",
+        "weights": "checkpoints/neu_seg/ppliteseg_stdc1_seed42.pth",
+        "threshold": 0.7
+      }
+    }
+  }
+}

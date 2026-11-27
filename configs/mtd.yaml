@@ -1,0 +1,38 @@
+dataset:
+  name: Magnetic_Tile_Defect
+  root: ./data/MTD
+  image_dir: images\training
+  mask_dir: annotations\training
+  num_classes: 2
+  split_dir: ./splits
+  train_split: mtd_train.txt
+  val_split: mtd_val.txt
+  test_split: mtd_test.txt
+  rebuild_split: false
+  seed: 42
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  classes:
+  - MT_Blowhole
+  - MT_Break
+  - MT_Crack
+  - MT_Fray
+  - MT_Free
+  - MT_Uneven
+  image_subdir: Imgs
+  free_class: MT_Free
+train:
+  input_size: 512
+  epochs: 160
+  batch_size: 16
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
+  power: 0.9
+  amp: true
+  seed: 42
+variant: cfpg
+loss:
+  ce_weight: 1.0
+  dice_weight: 1.0

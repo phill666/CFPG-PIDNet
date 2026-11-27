@@ -1,0 +1,51 @@
+{
+  "successes": [
+    {
+      "dataset": "ksdd2",
+      "sample": "20884",
+      "competitor": "U-Net"
+    },
+    {
+      "dataset": "ksdd2",
+      "sample": "20236",
+      "competitor": "U-Net"
+    },
+    {
+      "dataset": "mtd",
+      "sample": "MT_Uneven/exp1_num_129031",
+      "competitor": "STDC-Seg"
+    },
+    {
+      "dataset": "mtd",
+      "sample": "MT_Blowhole/exp4_num_3724",
+      "competitor": "STDC-Seg"
+    },
+    {
+      "dataset": "neu_seg",
+      "sample": "001624",
+      "competitor": "PP-LiteSeg-STDC1"
+    },
+    {
+      "dataset": "neu_seg",
+      "sample": "003359",
+      "competitor": "PP-LiteSeg-STDC1"
+    }
+  ],
+  "failures": [
+    {
+      "dataset": "ksdd2",
+      "sample": "20744",
+      "competitor": "U-Net"
+    },
+    {
+      "dataset": "mtd",
+      "sample": "MT_Break/exp1_num_98080",
+      "competitor": "STDC-Seg"
+    },
+    {
+      "dataset": "neu_seg",
+      "sample": "003732",
+      "competitor": "PP-LiteSeg-STDC1"
+    }
+  ]
+}
